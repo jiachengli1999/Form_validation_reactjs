@@ -10,8 +10,22 @@ class App extends Component{
       lastName: "",
       Gender: "",
       Age: "",
+      todos: [],
     })
     this.handleChange = this.handleChange.bind(this)
+  }
+
+  async componentDidMount() {
+    try {
+      const res = await fetch('http://127.0.0.1:8000/api/'); // fetching the data from api, before the page loaded
+      const info = await res.json();
+      console.log(info)
+      this.setState({
+        todos: info
+      });
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   handleChange(e){
@@ -25,6 +39,13 @@ class App extends Component{
     return(
       <div>
         <AppForm handleChange={this.handleChange} {...this.state}/>
+        <h1>Backend Data:</h1>
+        {this.state.todos.map(item => (
+          <div key={item.id}>
+            <h1>{item.title}</h1>
+            <span>{item.description}</span>
+          </div>
+        ))}
       </div>
     );
   }
