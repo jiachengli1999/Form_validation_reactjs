@@ -22,4 +22,5 @@ urlpatterns = [
     # path('api/', include('main.urls')),
     path('token-auth/', obtain_jwt_token),
     path('home/', include('main.urls')),
+    path('image_storage/', include('image_storage.urls')),
 ]

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'main', 
     'rest_framework',
     'corsheaders',
+    'image_storage',
 
 ]
 
