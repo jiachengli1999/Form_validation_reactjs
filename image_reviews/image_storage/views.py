@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import generics
+from rest_framework import generics, viewsets
 from rest_framework.response import Response
 
 from .models import image
@@ -10,5 +10,9 @@ class ListMain(generics.ListCreateAPIView):
     serializer_class = imageSerializer
 
 class DetailMain(generics.RetrieveUpdateDestroyAPIView):
+    queryset = image.objects.all()
+    serializer_class = imageSerializer
+
+class ItemViewSet(viewsets.ModelViewSet):
     queryset = image.objects.all()
     serializer_class = imageSerializer

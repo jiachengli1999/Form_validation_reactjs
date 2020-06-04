@@ -14,8 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf.urls import url
 from django.urls import path, include
 from rest_framework_jwt.views import obtain_jwt_token
+from image_storage.views import ItemViewSet
+from rest_framework import routers
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +28,4 @@ urlpatterns = [
     path('token-auth/', obtain_jwt_token),
     path('home/', include('main.urls')),
     path('image_storage/', include('image_storage.urls')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
