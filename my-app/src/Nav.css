@@ -1,0 +1,20 @@
+.header{
+    background-color:#333;
+    /* background-size: cover; */
+    color: white;
+    text-align: left;
+    padding: 5px;
+    font-size: 30px;
+    overflow: hidden; 
+}
+
+.header label{
+    color: white;
+    /* separate each word and thickness*/
+    padding: 14px 16px; 
+}
+
+.header label:hover{
+    background-color:white;
+    color: black;
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Nav.css'
 
 function Nav(props) {
   const logged_out_nav = (
-    <ul>
-      <li onClick={() => props.display_form('login')}>login</li>
-      <li onClick={() => props.display_form('signup')}>signup</li>
-      <li onClick={() => props.display_form('gallery')}>Gallery</li>
-    </ul>
+    <div className='header'>
+      <label onClick={() => props.display_form('login')}>login</label>
+      <label onClick={() => props.display_form('signup')}>signup</label>
+      <label onClick={() => props.display_form('gallery')}>Gallery</label>
+    </div>
   );
 
   const logged_in_nav = (
