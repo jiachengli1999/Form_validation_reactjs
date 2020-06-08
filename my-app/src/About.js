@@ -3,13 +3,14 @@ import stars from './pics/stars.PNG'
 import mountain from './pics/mountain.PNG'
 import mushrooms from './pics/mushrooms.PNG'
 import words from './pics/words.PNG'
+import wood from './pics/wood2.PNG'
 import './About.css'
 class About extends Component{
     render(){
         return(
             <div>
                 <div className='head'>
-                    <img className='stars' src={stars}/>
+                    <div className="title">Some Title</div>
                 </div>
                 <div className='body'>
                     <div className='item-area1'>

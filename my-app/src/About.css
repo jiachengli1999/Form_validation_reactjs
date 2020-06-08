@@ -1,4 +1,5 @@
-.stars{
+.head{
+    background-image: url('./pics/wood2.PNG');
     width:100%;
     height:400px;
     object-fit: cover;
@@ -7,8 +8,14 @@
     display: block;
 }
 
+.title{
+    font-size: 100px;
+    color: white;
+    padding: 150px;
+}
+
 .body{
-    background-image: url('./pics/background.PNG');
+    background-image: url('./pics/wood.PNG');
     height: 1800px;
     background-attachment: fixed;
     background-position: center;
@@ -59,16 +66,17 @@
 }
 
 .text-area1, .text-area3{
-    padding-left: 10px;
+    padding-left: 0px;
 }
 .text-area2{
-    padding-right: 10px;
+    padding-right: 0px;
 }
 p{
     font-size: 30px;
-    color: white;
+    color: black;
+    font-weight: 500;
 }
 h1{
-    color: white;
+    color: black;
 }
 
