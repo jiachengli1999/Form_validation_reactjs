@@ -1,0 +1,74 @@
+.stars{
+    width:100%;
+    height:400px;
+    object-fit: cover;
+    overflow: hidden;
+    /* remove line between pictures */
+    display: block;
+}
+
+.body{
+    background-image: url('./pics/background.PNG');
+    height: 1800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ /* separate the sections */
+.item-area1{
+    float: left;
+    width: 100%;
+}
+.item-area2{
+    float: right;
+    width: 100%;
+}
+.item-area3{
+    float: left;
+    width: 100%;
+}
+
+/* item-area1  */
+.mountain, .text-area1{
+    float: left;
+    padding: 50px 100px;
+}
+.mountain{
+    height:500px;
+}
+
+/* item-area2  */
+.mushrooms, .text-area2{
+    float: right;
+    padding: 50px 100px;
+}
+.mushrooms{
+    height:500px;
+}
+
+/* item-area3  */
+.words, .text-area3{
+    float: left;
+    padding: 50px 100px;
+}
+.words{
+    height:500px;
+    /* left: -200px;
+    bottom: -650px; */
+}
+
+.text-area1, .text-area3{
+    padding-left: 10px;
+}
+.text-area2{
+    padding-right: 10px;
+}
+p{
+    font-size: 30px;
+    color: white;
+}
+h1{
+    color: white;
+}
+

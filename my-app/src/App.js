@@ -6,6 +6,7 @@ import Login from './Login.js'
 import Signup from './Signup.js'
 import Nav from './Nav.js'
 import Gallery from './Gallery.js'
+import About from './About.js'
 
 class App extends Component {
   constructor(props) {
@@ -93,6 +94,9 @@ class App extends Component {
         break;
       case 'gallery':
         form = <Gallery />;
+        break;
+      case 'about':
+        form = <About />;
         break;
       default:
         form = null;

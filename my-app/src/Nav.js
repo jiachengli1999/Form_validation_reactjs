@@ -8,6 +8,7 @@ function Nav(props) {
       <label onClick={() => props.display_form('login')}>login</label>
       <label onClick={() => props.display_form('signup')}>signup</label>
       <label onClick={() => props.display_form('gallery')}>Gallery</label>
+      <label onClick={() => props.display_form('about')}>About</label>
     </div>
   );
 
